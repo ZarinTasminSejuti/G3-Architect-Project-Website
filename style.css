@@ -1,6 +1,6 @@
 /* Work Sans font from Google font */
-
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
 
 /* shared styles */
 * {
@@ -13,6 +13,12 @@
     color: #727272;
   }
 
+  .title {
+    color: #131313;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+  }
 .btn-primary {
   color: #fff;
   background-color: #ff900e;
@@ -36,12 +42,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.nav-title {
-  color: #131313;
-  text-align: center;
-  font-size: 45px;
-  font-weight: 700;
-}
+
 nav > ul {
   display: flex;
 }
