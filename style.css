@@ -172,14 +172,14 @@ main {
   justify-content: space-around;
 }
 
-.facts-container .title{
-text-align: left;
-margin-top: 130px;
+.facts-container .title {
+  text-align: left;
+  margin-top: 130px;
 }
 
-.facts-container > p{
-    width: 545px;
-    margin-bottom: 100px;
+.facts-container > p {
+  width: 545px;
+  margin-bottom: 100px;
 }
 
 .card {
@@ -202,17 +202,15 @@ margin-top: 130px;
   margin-top: 5px;
 }
 
-
-
 /* sponsor section styles */
 .sponsors-container {
   text-align: center;
   margin-top: 100px;
 }
 
-.sponsors-container > p{
-    width: 542px;
-    margin: 25px auto 50px;
+.sponsors-container > p {
+  width: 542px;
+  margin: 25px auto 50px;
 }
 
 .sponsors-img-gallery {
@@ -227,8 +225,6 @@ margin-top: 130px;
   width: 165px;
   filter: grayscale(100%);
 }
-
-
 
 /* footer section styles */
 .footer-content {
@@ -246,25 +242,42 @@ margin-top: 130px;
 
 /* responsive styles for small/mobile devices*/
 @media screen and (max-width: 576px) {
+  main {
+    width: 100%;
+  }
   header {
     padding: 20px;
   }
+
   nav,
   .featured-container,
-  .facts-card-container,
   .more-featured-container,
   .sponsors-img-gallery {
     flex-direction: column;
   }
+  .more-featured-container {
+    width: 80%;
+    margin: 0 auto;
+    gap: 0;
+  }
 
   .more-featured-img img {
-    width: 90%;
+    width: 100%;
     margin-left: 0;
   }
+
   .ten-years-button {
-    position: static;
-    max-width: 300px;
+    position: relative;
+    width: 30%;
+    padding: 20px;
+    margin: 40px auto 0;
   }
+
+  .ten-years-button h2 {
+    font-size: 25px;
+    margin: 3px;
+  }
+
   .featured-gallery {
     grid-template-columns: 1fr;
   }
@@ -272,8 +285,44 @@ margin-top: 130px;
   .facts-card-container {
     padding: 0px 20px;
   }
+
+  .featured-content,
+  .sponsors-container {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .more-featured-content .title {
+    margin-top: 60px;
+  }
+
+  .facts-container,
+  .facts-container .title {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+
+  .facts-container > p {
+    margin: 0 auto 60px;
+    width: 545px;
+  }
+
   .facts-card-container {
-    gap: 20px;
+    width: 90%;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .footer-content {
+    width: 100%;
+  }
+
+  .footer-content {
+    margin: 0 auto;
   }
 }
 
