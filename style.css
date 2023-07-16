@@ -1,7 +1,6 @@
 /* Work Sans font from Google font */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
 
-
 /* shared styles */
 * {
   font-family: "Work Sans", sans-serif;
@@ -10,15 +9,16 @@
 }
 
 .text-grey {
-    color: #727272;
-  }
+  color: #727272;
+}
 
-  .title {
-    color: #131313;
-    text-align: center;
-    font-size: 45px;
-    font-weight: 700;
-  }
+.title {
+  color: #131313;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #ff900e;
@@ -29,6 +29,7 @@
   padding: 20px 25px;
   cursor: pointer;
 }
+
 
 /* header section styles */
 
@@ -78,39 +79,67 @@ nav li a {
   margin-top: 20px;
 }
 
-main{
-    max-width: 1440px;
-    margin: 70px auto;
+main {
+  max-width: 1440px;
+  margin: 70px auto;
 }
 
 /* featured styles */
-.featured-container{
-    display: flex;
-    align-items: center;
+.featured-container {
+  display: flex;
+  align-items: center;
 }
 
-.featured-gallery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+.featured-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
-.featured-content{
-    padding: 0px 70px;
+.featured-content {
+  padding: 0px 70px;
 }
 
-.featured-title{
-    font-size: 45px;
+.featured-title {
+  font-size: 45px;
 }
 
-.featured-title .quick-list{
-    font-weight: 500;;
+.featured-title .quick-list {
+  font-weight: 500;
 }
 
-.featured-title .text-feature{
-    color: #FF900E;
-    font-weight: 700;
+.featured-title .text-feature {
+  color: #ff900e;
+  font-weight: 700;
 }
+
+
+/* facts section styles */
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.facts-card-container .card {
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #ff900e;
+  padding: 30px;
+}
+
+.facts-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin: 10px 0px;
+}
+
+.facts-card-container .card-title{
+    font-weight: 600;
+   font-size: 1.25rem;
+   margin-top: 5px;
+}
+
+
 
 /* responsive styles for small/mobile devices*/
 @media screen and (max-width: 576px) {
@@ -121,22 +150,21 @@ main{
   .featured-container {
     flex-direction: column;
   }
-  .featured-gallery{
+  .featured-gallery {
     grid-template-columns: 1fr;
   }
-  .featured-content{
+  .featured-content {
     padding: 0px 20px;
   }
-
 }
-
 
 /* responsive styles for medium/tablet devices*/
 @media screen and (min-width: 577px) and (max-width: 960px) {
-    header {
-      padding: 50px;
-    }
-    nav, .featured-container {
-      flex-direction: column;
-    }
+  header {
+    padding: 50px;
   }
+  nav,
+  .featured-container {
+    flex-direction: column;
+  }
+}
