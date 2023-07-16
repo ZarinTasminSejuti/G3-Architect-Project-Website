@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+.text-grey {
+    color: #727272;
+  }
+
 .btn-primary {
   color: #fff;
   background-color: #ff900e;
@@ -68,10 +72,6 @@ nav li a {
   color: #131313;
 }
 
-.banner-description {
-  color: #727272;
-}
-
 .banner img {
   width: 100%;
   margin-top: 20px;
@@ -79,7 +79,7 @@ nav li a {
 
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 /* featured styles */
@@ -103,7 +103,6 @@ main{
 }
 
 .featured-title .quick-list{
-    color: #727272;
     font-weight: 500;;
 }
 
@@ -117,9 +116,17 @@ main{
   header {
     padding: 20px;
   }
-  nav {
+  nav,
+  .featured-container {
     flex-direction: column;
   }
+  .featured-gallery{
+    grid-template-columns: 1fr;
+  }
+  .featured-content{
+    padding: 0px 20px;
+  }
+
 }
 
 
@@ -128,7 +135,7 @@ main{
     header {
       padding: 50px;
     }
-    nav {
+    nav, .featured-container {
       flex-direction: column;
     }
   }
