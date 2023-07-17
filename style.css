@@ -214,7 +214,7 @@ main {
 }
 
 .sponsors-container > p {
-  width: 542px;
+  width: 540px;
   margin: 25px auto 50px;
 }
 
@@ -261,6 +261,10 @@ main {
   .sponsors-img-gallery {
     flex-direction: column;
   }
+nav > ul {
+  margin-top: 30px;
+}
+
   .more-featured-container {
     width: 80%;
     margin: 0 auto;
@@ -311,7 +315,7 @@ main {
 
   .facts-container > p {
     margin: 0 auto 60px;
-    width: 545px;
+    width: 540px;
   }
 
   .facts-card-container {
